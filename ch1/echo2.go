@@ -3,9 +3,11 @@ package main
 import (
 "fmt"
 "os"
+"time"
 )
 
 func main() {
+start := time.Now()
 s, sep := "", ""
 for _, arg := range os.Args[0:] {
 s += sep + arg
@@ -16,4 +18,7 @@ for _, arg := range os.Args[0:]{
 
 fmt.Println(arg)
 }
+secs := time.Since(start).Seconds()
+
+fmt.Printf(".2fs", secs)
 }
