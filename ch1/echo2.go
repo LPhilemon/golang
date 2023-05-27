@@ -20,5 +20,5 @@ fmt.Println(arg)
 }
 secs := time.Since(start).Seconds()
 
-fmt.Printf(".2fs", secs)
+fmt.Printf("%.2fs", secs)
 }
