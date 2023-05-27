@@ -11,5 +11,9 @@ for _, arg := range os.Args[0:] {
 s += sep + arg
 sep = " "
 }
-fmt.Println(s)
+
+for _, arg := range os.Args[0:]{
+
+fmt.Println(arg)
+}
 }
