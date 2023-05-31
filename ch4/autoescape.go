@@ -10,4 +10,4 @@ func main() {
 	if err := t.Execute(os.Stdout, data); err != nil {
 	log.Fatal(err)
 	}
-	}
+	}s
